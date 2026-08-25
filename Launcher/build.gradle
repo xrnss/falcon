@@ -4,7 +4,7 @@ plugins {
 }
 
 group = 'club.rnss.launcher'
-version = '1.0-SNAPSHOT'
+version = '0.1-BETA'
 
 repositories {
     mavenCentral()
@@ -12,6 +12,9 @@ repositories {
 
 dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    implementation("net.java.dev.jna:jna:5.13.0")
+    implementation("net.java.dev.jna:jna-platform:5.13.0")
+    implementation("org.java-websocket:Java-WebSocket:1.5.3")
 }
 
 test {
