@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34acf874-615a-4c16-a93f-8ae68a25beea" name="Changes" comment="Test">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/gui/Fonts.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/gui/MainGui.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/injection/Injector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/injection/Natives.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/network/Protocol.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/network/Server.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/network/utils/Reader.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/network/utils/Writer.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/BenzinRegular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/FalconLogo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="34acf874-615a-4c16-a93f-8ae68a25beea" name="Changes" comment="Test" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
