@@ -1,27 +1,27 @@
 #include "falconreader.h"
 
-std::vector<uint8_t> DEReader::view;  // Definition of the static member variable
+std::vector<uint8_t> FalconReader::view;  // Definition of the static member variable
 
-DEReader::DEReader() {}
+FalconReader::FalconReader() {}
 
-DEReader::DEReader(std::vector<uint8_t>& byteView, int offset, bool littleEndian)
+FalconReader::FalconReader(std::vector<uint8_t>& byteView, int offset, bool littleEndian)
     : le(littleEndian), offset(offset) {
-    DEReader::view = byteView;
+    FalconReader::view = byteView;
     if (littleEndian)
         std::memcpy(view.data() + offset, view.data() + offset, view.size() - offset);
 }
 
-int DEReader::getUint8() {
+int FalconReader::getUint8() {
     return view[offset++];
 }
 
-int DEReader::getUint16() {
+int FalconReader::getUint16() {
     int value = static_cast<uint16_t>((view[offset] << 8) | view[offset + 1]);
     offset += 2;
     return value;
 }
 
-int DEReader::getInt32() {
+int FalconReader::getInt32() {
     int value;
     if (le)
         std::memcpy(&value, view.data() + offset, sizeof(value));
@@ -31,11 +31,11 @@ int DEReader::getInt32() {
     return value;
 }
 
-int DEReader::getUint32() {
+int FalconReader::getUint32() {
     return getInt32();
 }
 
-double DEReader::getFloat64() {
+double FalconReader::getFloat64() {
     double value;
     if (le)
         std::memcpy(&value, view.data() + offset, sizeof(value));
@@ -48,7 +48,7 @@ double DEReader::getFloat64() {
     return value;
 }
 
-std::string DEReader::getStringUTF8() {
+std::string FalconReader::getStringUTF8() {
     std::string s;
     std::vector<uint8_t> b(1);
 

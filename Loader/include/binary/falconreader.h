@@ -7,16 +7,16 @@
 #include <vector>
 #include <iostream>
 
-class DEReader {
+class FalconReader {
 private:
     bool le;
     static std::vector<uint8_t> view;  // Declaration of the static member variable
     int offset;
 
 public:
-    DEReader();
+    FalconReader();
 
-    DEReader(std::vector<uint8_t>& byteView, int offset, bool littleEndian);
+    FalconReader(std::vector<uint8_t>& byteView, int offset, bool littleEndian);
 
     int getUint8();
 

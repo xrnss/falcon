@@ -3,7 +3,7 @@
 #include <cstring>
 #include <string>
 
-class Writer {
+class FalconWriter {
 private:
     int offset = 0;
     std::vector<uint8_t> ex;
@@ -11,9 +11,9 @@ private:
     std::vector<uint8_t> b;
 
 public:
-    Writer() {}
+    FalconWriter() {}
 
-    Writer(bool littleEndian) : le(littleEndian) {}
+    FalconWriter(bool littleEndian) : le(littleEndian) {}
 
     void setPacketId(int pId) {
         b = { static_cast<uint8_t>(pId) };
