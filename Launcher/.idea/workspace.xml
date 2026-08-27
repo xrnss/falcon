@@ -5,12 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34acf874-615a-4c16-a93f-8ae68a25beea" name="Changes" comment="Test">
-      <change afterPath="$PROJECT_DIR$/src/main/java/club/rnss/bootstrap/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Helper/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Helper/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/club/rnss/bootstrap/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/rnss/bootstrap/Bootstrap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/club/rnss/launcher/injection/Natives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/rnss/launcher/injection/Natives.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/injection/Natives.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/club/rnss/launcher/injection/Natives.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/network/Protocol.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/network/Protocol.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/gui/Fonts.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/gui/Fonts.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/gui/MainGui.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/gui/MainGui.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/injection/Injector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/club/rnss/launcher/injection/Injector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/BenzinRegular.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/club/rnss/launcher/BenzinRegular.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/FalconLogo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/club/rnss/launcher/FalconLogo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/src/export.h" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/src/export.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loader/src/socket.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/../Loader/include/socket.hpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,9 +106,11 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "Gradle.Launcher [:club.rnss.launcher.MainKt.main()].executor": "Run",
     "Gradle.Launcher [bootstrapJar].executor": "Run",
     "Gradle.Launcher [launcherJar].executor": "Run",
+    "JAR Application.Launcher.jar.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -110,7 +119,7 @@
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Ross.ROSS-DESKTOP/Documents/Falcon/Launcher/src/main/kotlin/club/rnss/launcher/network",
+    "last_opened_file_path": "C:/Users/Ross.ROSS-DESKTOP/Documents/Falcon/Launcher/src/main/resources/club/rnss/launcher",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.jshint": "true",
     "node.js.detected.package.tslint": "true",
@@ -127,10 +136,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Ross.ROSS-DESKTOP\Documents\Falcon\Launcher\src\main\resources\club\rnss\launcher" />
+      <recent name="C:\Users\Ross.ROSS-DESKTOP\Documents\Falcon\Launcher\build\libs" />
       <recent name="C:\Users\Ross.ROSS-DESKTOP\Documents\Falcon\Launcher\src\main\kotlin\club\rnss\launcher\network" />
       <recent name="C:\Users\Ross.ROSS-DESKTOP\Documents\Falcon\Launcher\src\main\resources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Ross.ROSS-DESKTOP\Documents\Falcon\Launcher\src\main\resources\club\rnss\launcher" />
+      <recent name="C:\Users\Ross.ROSS-DESKTOP\Documents\Falcon\Launcher\src\main\resources" />
       <recent name="C:\Users\Ross.ROSS-DESKTOP\Documents\Falcon\Launcher\src\main\kotlin\club\rnss\launcher" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -138,7 +151,7 @@
       <recent name="club.rnss.bootstrap" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Launcher [launcherJar]">
+  <component name="RunManager" selected="JAR Application.Launcher.jar">
     <configuration name="Launcher [bootstrapJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,6 +202,10 @@
       <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
+    <configuration name="Launcher.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/build/libs/Launcher.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="club.rnss.launcher.MainKt" />
       <module name="Launcher.main" />
@@ -198,6 +215,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JAR Application.Launcher.jar" />
         <item itemvalue="Gradle.Launcher [launcherJar]" />
         <item itemvalue="Gradle.Launcher [bootstrapJar]" />
         <item itemvalue="Kotlin.MainKt" />

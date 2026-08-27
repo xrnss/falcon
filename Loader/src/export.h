@@ -5,12 +5,12 @@
 #ifndef LOADER_EXPORT_H
 #define LOADER_EXPORT_H
 
+#include <rdi/ReflectiveDLLInjection.h>
+#include <string>
+#include <socket.hpp>
+
 #define REFLECTIVEDLLINJECTION_VIA_LOADREMOTELIBRARYR
 #define REFLECTIVEDLLINJECTION_CUSTOM_DLLMAIN
-#include <string>
-
-#include "rdi/ReflectiveDLLInjection.h"
-#include "socket.hpp"
 
 HINSTANCE hInst;
 
@@ -34,6 +34,8 @@ DWORD WINAPI StartThread(LPVOID lpThreadParameter) {
 
 BOOL WINAPI DllMain(HINSTANCE hinst, DWORD dwReason, LPVOID lpReserved) {
     if (dwReason == DLL_PROCESS_ATTACH) {
+        MessageBoxA(nullptr, "DllMain reached", "DEBUG", MB_OK);
+
         HANDLE tHandle = CreateThread(NULL, 0, &StartThread, lpReserved, NULL, NULL);
         CloseHandle(tHandle);
         hInst = hinst;

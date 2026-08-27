@@ -45,7 +45,7 @@ class MainGui {
         // Appearance
         frame.contentPane.background = Color.decode("#151416")
         frame.shape = Area(RoundRectangle2D.Float(0f, 0f, frame.width.toFloat(), frame.height.toFloat(), 20f, 20f))
-        frame.add(ImagePanel("/FalconLogo.png", 275, 78).apply { isOpaque = false })
+        frame.add(ImagePanel("/club/rnss/launcher/FalconLogo.png", 275, 78).apply { isOpaque = false })
 
         // Progress Bar
         storedProgressBar = JProgressBar(0, 100).apply {

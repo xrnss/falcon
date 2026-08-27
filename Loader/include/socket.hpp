@@ -165,7 +165,7 @@ jclass FindClassWithLoader(JNIEnv* env, jobject loader, const std::string& class
 
 void on_message(Client *c, websocketpp::connection_hdl hdl, message_ptr msg) {
     std::vector<uint8_t> payloadData(msg->get_payload().begin(), msg->get_payload().end());
-    FalconReader reader(payload, 0, false);
+    FalconReader reader(payloadData, 0, false);
     JVMContext *jvmCtx = JVMContext::instance();
 
     int opCode = reader.getUint8();

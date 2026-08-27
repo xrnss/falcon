@@ -8,7 +8,7 @@ object Fonts {
     fun load() {
         try {
             val stream = Fonts::class.java
-                .getResourceAsStream("/BenzinRegular.ttf")
+                .getResourceAsStream("/club/rnss/launcher/BenzinRegular.ttf")
 
             CUSTOM = Font.createFont(
                 Font.TRUETYPE_FONT,

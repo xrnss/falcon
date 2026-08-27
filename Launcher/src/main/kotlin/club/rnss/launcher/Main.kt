@@ -2,9 +2,11 @@ package club.rnss.launcher
 
 import club.rnss.launcher.gui.MainGui
 import club.rnss.launcher.injection.Injector
+import club.rnss.launcher.network.Server
 import java.net.ServerSocket
 
 var mainGui: MainGui? = null
+var server: Server? = null
 
 // Find free port for communication with DLL once inside JVM
 val socketPort by lazy {
@@ -18,10 +20,12 @@ val socketPort by lazy {
 fun main(args: Array<String>) {
     // Init GUI
     mainGui = MainGui()
+    server = Server(socketPort)
+    server?.start()
 
     // Fetch FalconLoader.dll
     val dllBuffer: ByteArray =
-        object {}.javaClass.getResourceAsStream("/FalconLoader.dll")
+        object {}.javaClass.getResourceAsStream("/club/rnss/launcher/FalconLoader.dll")
             ?.use { it.readBytes() }
             ?: error("DLL resource not found")
 

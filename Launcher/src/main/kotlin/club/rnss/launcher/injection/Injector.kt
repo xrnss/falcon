@@ -20,7 +20,7 @@ class Injector {
                         String(this)
                     }
 
-                    if (windowText.contains("Minecraft")) { // Adjust this if necessary
+                    if (windowText.contains("Minecraft") || windowText.contains("1.8.9")) { // Adjust this if necessary
                         user32.GetWindowThreadProcessId(hWnd, pid)
                         break
                     }

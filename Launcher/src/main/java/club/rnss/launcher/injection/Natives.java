@@ -11,7 +11,7 @@ public class Natives {
             File dll = File.createTempFile("falconinj-", ".dll");
             dll.deleteOnExit();
 
-            InputStream in = Natives.class.getResourceAsStream("/FalconHelper.dll");
+            InputStream in = Natives.class.getResourceAsStream("/club/rnss/launcher/FalconHelper.dll");
 
             try (OutputStream out = new FileOutputStream(dll)) {
                 byte[] buffer = new byte[8192];
