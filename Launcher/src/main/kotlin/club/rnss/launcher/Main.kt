@@ -6,7 +6,7 @@ import java.net.ServerSocket
 
 var mainGui: MainGui? = null
 
-// Find free port for communciation with DLL once inside JVM
+// Find free port for communication with DLL once inside JVM
 val socketPort by lazy {
     for (port in 1000..Short.MAX_VALUE) {
         if (runCatching { ServerSocket(port).close() }.isSuccess)
@@ -19,9 +19,9 @@ fun main(args: Array<String>) {
     // Init GUI
     mainGui = MainGui()
 
-    // Fetch FalconJVMNatives.dll
+    // Fetch FalconLoader.dll
     val dllBuffer: ByteArray =
-        object {}.javaClass.getResourceAsStream("/FalconJVMNatives.dll")
+        object {}.javaClass.getResourceAsStream("/FalconLoader.dll")
             ?.use { it.readBytes() }
             ?: error("DLL resource not found")
 

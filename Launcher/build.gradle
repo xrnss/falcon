@@ -12,6 +12,7 @@ repositories {
 
 dependencies {
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+
     implementation("net.java.dev.jna:jna:5.13.0")
     implementation("net.java.dev.jna:jna-platform:5.13.0")
     implementation("org.java-websocket:Java-WebSocket:1.5.3")
@@ -27,6 +28,35 @@ compileKotlin {
 
 compileTestKotlin {
     kotlinOptions.jvmTarget = '1.8'
+}
+
+tasks.register('launcherJar', Jar) {
+    archiveFileName = 'Launcher.jar'
+
+    from(sourceSets.main.output) {
+        include 'club/rnss/launcher/**'
+    }
+
+    dependsOn(configurations.runtimeClasspath)
+    from({
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    })
+
+    manifest {
+        attributes(
+                'Main-Class': 'club.rnss.launcher.MainKt'
+        )
+    }
+
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+}
+
+tasks.register('bootstrapJar', Jar) {
+    archiveFileName = 'Bootstrap.jar'
+
+    from(sourceSets.main.output) {
+        include 'club/rnss/bootstrap/**'
+    }
 }
 
 application {
