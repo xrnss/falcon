@@ -29,6 +29,7 @@ A system like this would would be most useful when analysing a JVM with DisableA
 This project is a WIP. TBC is listed below.
 - [ ] Resource loading into the JVM (fonts, images etc. for use)
 - [ ] Native registering of bootstrap class (getters and setters for class bytes, to allow ASM + hooking etc.)
+- [ ] GUI does not currently function 
 
 ## Notes
 Due to the nature of RDI (Reflective DLL Injection), this project may be flagged by antiviruses, resulting in false positives. RDI is used to load the DLL directly into the JVM's memory space without writing to the disk or using Windows' standard `LoadLibrary`. It handles the DLL's relocation and initialisation in memory.
